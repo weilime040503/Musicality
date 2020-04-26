@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/at_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BEATS AND PULSE"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="2dp"
+            android:text="Welcome to Musicality, which is the starting point for beginners into the interesting and fun world of music theory.  In this course, you’ll master the fundamentals of music theory and see how to analyse music from an objective standpoint which will help you listen out for things in music from the past, present and future."
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="2dp"
+            android:text="The introductory course is made of three core concepts which will be the backbone of the more complex concepts as you progress.   The first course is Pulse and Beats which is what gives music structure. Without a pulse and beats music would lose it’s life! "
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="2dp"
+            android:text="A pulse can be thought of as the ticking of a clock as it separates the individual ticks by one second which can be thought of as the beat. In this way a pulse keeps structure by splitting beats into equal lengths of time! "
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:lineSpacingExtra="2dp"
+            android:text="Pulse and beats are always there even if you cannot hear them just like your heartbeat. Your body can naturally feel a pulse when you hear music. You do this when you tap your foot to a song. Click the play button below to hear a short drum beat and try to clap or tap your foot to the pulse."
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+
+            app:showSeekBar="true"
+            app:autoPlay="false"
+            app:showFullScreenButton="true"
+            app:showYouTubeButton="false"
+            app:videoId="lQnG9HlWok0"/>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        />
+</LinearLayout>

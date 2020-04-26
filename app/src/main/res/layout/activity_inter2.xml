@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/at_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Treble Clef"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            android:text="As we discussed in the last topic of the introduction stage we need some kind of system to determine the individual notes on the musical staff. There are two primary systems: the treble clef and the bass clef. We’ll first take a look at the treble clef."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/trebleclef"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            android:text="The treble clef is a symbol that looks like this and is generally found at the start of every new line on a music score and next to the time signature at the beginning."/>
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/des7"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            android:text="Each line and space is a different note starting with the first line being E and the last line being F. Every space or line you ascend is one letter up so the first space would be F as E was the note on the first line. You can use this chart to help you."/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/des6">
+
+        </ImageView>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        />
+</LinearLayout>

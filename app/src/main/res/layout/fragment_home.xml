@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Musicality"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:id="@+id/tv_cloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:text="Mixcloud"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:background="@color/white"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <ImageView
+               android:id="@+id/imageView3"
+               android:layout_width="match_parent"
+               android:layout_height="190dp"
+               app:srcCompat="@drawable/bannertop" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_gravity="center"
+               android:layout_marginTop="@dimen/padding_16"
+               android:background="@drawable/banner"
+               android:gravity="center"
+               android:text="Introduction"
+               android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+               android:textColor="#ffffff"
+               android:textSize="18sp" />
+
+           <LinearLayout
+               android:layout_marginTop="@dimen/padding_16"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/tv_a1"
+                   android:layout_width="150dp"
+                   android:layout_height="120dp"
+                   android:layout_gravity="center"
+                   android:background="@drawable/topic_pass"
+                   android:gravity="center"
+                   android:text="Beats and
+                    Pulse"
+                   android:textColor="#000"
+                   android:textSize="18sp" />
+
+               <TextView
+                   android:id="@+id/tv_a2"
+                   android:layout_width="150dp"
+                   android:layout_height="120dp"
+                   android:layout_gravity="center"
+                   android:layout_marginStart="30dp"
+                   android:background="@drawable/topic_pass"
+                   android:gravity="center"
+                   android:text="Rhythm"
+                   android:textColor="#000"
+
+                   android:textSize="18sp" />
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/tv_a3"
+               android:layout_width="150dp"
+               android:layout_height="120dp"
+               android:layout_gravity="center"
+               android:layout_marginTop="@dimen/padding_16"
+               android:background="@drawable/topic_pass"
+               android:gravity="center"
+               android:text="Pitch"
+               android:textColor="#000"
+               android:textSize="18sp" />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:textColor="#fff"
+               android:textSize="18sp"
+               android:layout_gravity="center"
+               android:background="@drawable/banner"
+               android:gravity="center"
+               android:layout_marginTop="@dimen/padding_16"
+               android:text="Intermediate"/>
+
+           <LinearLayout
+               android:layout_marginTop="@dimen/padding_16"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/tv_b1"
+                   android:layout_width="150dp"
+                   android:layout_height="120dp"
+                   android:layout_gravity="center"
+                   android:background="@drawable/topic_pass2"
+                   android:gravity="center"
+                   android:text="Time Signatures"
+                   android:textColor="#000"
+                   android:textSize="18sp" />
+
+               <TextView
+                   android:id="@+id/tv_b2"
+                   android:layout_width="150dp"
+                   android:layout_height="120dp"
+                   android:layout_gravity="center"
+                   android:layout_marginStart="30dp"
+                   android:background="@drawable/topic_pass2"
+                   android:gravity="center"
+                   android:text="Treble Clef"
+                   android:textColor="#000"
+
+                   android:textSize="18sp" />
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/tv_b3"
+               android:layout_width="150dp"
+               android:layout_height="120dp"
+               android:layout_gravity="center"
+               android:layout_marginTop="@dimen/padding_16"
+               android:background="@drawable/topic_pass2"
+               android:gravity="center"
+               android:text="Bass Clef"
+               android:textColor="#000"
+               android:textSize="18sp" />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:textColor="#fff"
+               android:textSize="18sp"
+               android:layout_gravity="center"
+               android:background="@drawable/banner"
+               android:gravity="center"
+               android:layout_marginTop="@dimen/padding_16"
+               android:text="Expert"/>
+
+           <LinearLayout
+               android:layout_marginTop="@dimen/padding_16"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/tv_c1"
+                   android:layout_width="150dp"
+                   android:layout_height="120dp"
+                   android:layout_gravity="center"
+                   android:background="@drawable/topic_pass4"
+                   android:gravity="center"
+                   android:text="Quavers and Semiquavers"
+                   android:textColor="#000"
+                   android:textSize="18sp" />
+
+               <TextView
+                   android:id="@+id/tv_c2"
+                   android:layout_width="150dp"
+                   android:layout_height="120dp"
+                   android:layout_gravity="center"
+                   android:layout_marginStart="30dp"
+                   android:background="@drawable/topic_pass4"
+                   android:gravity="center"
+                   android:text="Sharps and Flats"
+                   android:textColor="#000"
+
+                   android:textSize="18sp" />
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/tv_c3"
+               android:layout_width="150dp"
+               android:layout_height="120dp"
+               android:layout_gravity="center"
+               android:layout_marginTop="@dimen/padding_16"
+               android:background="@drawable/topic_pass4"
+               android:gravity="center"
+               android:text="Final Test"
+               android:textColor="#000"
+               android:textSize="18sp" />
+       </LinearLayout>
+   </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

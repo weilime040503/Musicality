@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/at_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Rhythm"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            android:text="Now that you understand pulse and beats, how do we go about making beats interesting and varied? We use different types of notes which have different durations and names. But first let’s dissect a famous piece by its different note types. Click to listen on the following excerpt."/>
+        <ImageView
+            android:id="@+id/soundA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            android:text="As you can hear the string sound is one beat long. This is called a crotchet and is notated like this。"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/des1">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            android:text="Now listen to the same excerpt now with an added flute. Notice how the flute sound is two times longer than the string sound and takes up 2 beats. This is called a minum and is notated like this."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/des2">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/soundB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            android:text="Now listen again but now with the horn added. Notice how the horn is two times longer than the flute sound and takes up four beats. This is called a semibreve and is notated as below. Therefore it can be said that four crotchets equals a semibreve and two minims equal a semibreve as well."/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:src="@drawable/icon_4"/>
+        <ImageView
+            android:id="@+id/soundC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play"/>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        />
+</LinearLayout>

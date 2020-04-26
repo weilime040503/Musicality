@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/at_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Time Signatures"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            android:text="So far we’ve had just a steady pulse throughout all our examples. However do you notice that when you tap your foot to a song you tap your foot a little bit harder on some beats then others. This is intentional and is what time signatures serve to do.They divide beats into individual cells called bars which look like this"/>
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/des4">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            android:text="Listen to this piece of music and try to tap along to the rhythm. Do you notice how you feel the pulse like 1, 2, 3. 1, 2, 3? "/>
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+
+            app:showSeekBar="true"
+            app:autoPlay="false"
+            app:showFullScreenButton="true"
+            app:showYouTubeButton="false"
+            app:videoId="mmCnQDUSO4I"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            android:text="This is known as triple time and is written with the following symbol. It is called that as there are three beats in the bar. The top number represents the amount of beats in the bar and the bottom the type of beat however for our purpose the bottom number isn’t important yet."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/timesig34">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            android:text="Listen to this piece of music and try to tap along to the rhythm. Do you notice how you feel the pulse like 1, 2, 3, 4. 1, 2, 3, 4?"
+            />
+
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+
+            app:showSeekBar="true"
+            app:autoPlay="false"
+            app:showFullScreenButton="true"
+            app:showYouTubeButton="false"
+            app:videoId="-tJYN-eG1zk"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:lineSpacingExtra="2dp"
+            android:text="This is known as common time and is written with the following symbol. It is called that as there are four beats in the bar. Most music is written with this time signature."/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/des5">
+
+        </ImageView>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        />
+</LinearLayout>

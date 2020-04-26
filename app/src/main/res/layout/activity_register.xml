@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/at_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Enter your detail here"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:text="First name"
+        android:maxLength="10"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_marginTop="@dimen/padding_16"
+        android:id="@+id/et_first"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/et_bg"
+        android:drawablePadding="8dp"
+        android:paddingStart="12dp"
+        android:singleLine="true"
+        android:textColor="#ff363636"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:text="Last Name"
+        android:maxLength="10"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_marginTop="@dimen/padding_16"
+        android:id="@+id/et_last"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/et_bg"
+        android:drawablePadding="8dp"
+        android:maxLength="10"
+        android:paddingStart="12dp"
+        android:singleLine="true"
+        android:textColor="#ff363636"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="28dp"
+        android:maxLength="20"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="Email Address"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_marginTop="@dimen/padding_16"
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/et_bg"
+        android:drawablePadding="8dp"
+        android:paddingStart="12dp"
+        android:singleLine="true"
+        android:textColor="#ff363636"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="28dp"
+        android:background="@drawable/continuebutton"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</LinearLayout>
