@@ -19,6 +19,7 @@ public class CommentDao {
 
     private SQLiteDatabase db;
 
+   //GET TEH UNSTANCE OF THE OBJECT COMMENTDAO
     private CommentDao(Context context) {
         OpenHelper dbHelper = new OpenHelper(context, DB_NAME, null, VERSION);
         db = dbHelper.getWritableDatabase();
