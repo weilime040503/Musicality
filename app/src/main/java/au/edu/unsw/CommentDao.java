@@ -23,7 +23,7 @@ public class CommentDao {
         OpenHelper dbHelper = new OpenHelper(context, DB_NAME, null, VERSION);
         db = dbHelper.getWritableDatabase();
     }
-
+    //get the instance of comment object
     public synchronized static CommentDao getInstance(Context context) {
         if (userDB == null) {
             userDB = new CommentDao(context);
@@ -55,7 +55,7 @@ public class CommentDao {
         db.delete("comment", "id" + "=?" , new String[]{id});
     }
 
-    // search all the data in comment
+    //search for the data, create comment by cursor to create comment to add the object into ArrayList
     public List<Comment> loadComment(){
         ArrayList<Comment> orderList = new ArrayList<Comment>();
         Cursor cursor = db.query("comment", null, null, null, null, null, null);
