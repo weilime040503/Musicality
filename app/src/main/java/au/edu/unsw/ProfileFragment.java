@@ -40,7 +40,7 @@ public class ProfileFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         TextView userName = view.findViewById(R.id.user_name);
         TextView userEmail = view.findViewById(R.id.user_mail);
-
+    // get the information which stored in shared prefferences
         sp = getActivity(). getSharedPreferences("music", Context.MODE_PRIVATE);
         String firstName = sp.getString("firstName", "");
         String lastName = sp.getString("lastName", "");
@@ -59,7 +59,7 @@ public class ProfileFragment extends Fragment {
         progress3text = view.findViewById(R.id.badge3progress);
         ll_introduction = view.findViewById(R.id.ll_introduction);
         ll_intermediate = view.findViewById(R.id.ll_intermediate);
-         ll_expert = view.findViewById(R.id.ll_expert);
+        ll_expert = view.findViewById(R.id.ll_expert);
     }
 
     @Override

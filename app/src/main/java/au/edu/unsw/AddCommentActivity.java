@@ -18,6 +18,7 @@ public class AddCommentActivity extends AppCompatActivity {
     EditText mEtContent;
     TextView mBtAdd;
     @Override
+    //create view that is able to add new comment on
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
